@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="./src/app/scripts.js"></script>
+    <title>Aplicação SMARKIO</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row" id="mainContent">
+            <div class="col-lg-5">
+                <p id="cadCom" class="h5">Cadastre um comentário!</p>
+                <div id="leftPane" class="card">
+                    <div class="card-body">                        
+                        <div class="form-group">                          
+                            <span>
+                                <textarea class="form-control" id="insertComment" rows="6" maxlength="255" placeholder="Digite aqui..."></textarea>
+                            </span>                            
+                        </div>
+                        <span>
+                            <button class="btn btn-success" id="Register" type="reset"><strong>Cadastrar</strong></button>
+                        </span>
+                    </div>
+                </div>
+            </div>         
+            <div class="col-lg-7">  
+                <div id="rightPane">
+                    <p id="comCad" class="h5"><i>Comentários Cadastrados</i></p>
+                    <div id="commentsRegistered">         
+                        <span id="startAppend"></span>                       
+                    </div>
+                </div>
+                <audio>
+                    <source id="voices" type="audio/wav">
+                </audio>
+            </div>
+        </div> 
+    </div>
+</body>  
+</html>
